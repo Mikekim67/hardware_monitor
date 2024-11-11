@@ -12,3 +12,16 @@ C:\Users\dykim\Desktop\projects\esp8266\libre_hw_data_nframew\libre_hw_data_nfra
 C:\Users\dykim\Desktop\projects\esp8266\libre_hw_data_nframew\libre_hw_data_nframew\obj\Debug\libre_hw.74E2043A.Up2Date
 C:\Users\dykim\Desktop\projects\esp8266\libre_hw_data_nframew\libre_hw_data_nframew\obj\Debug\libre_hw_data_nframew.exe
 C:\Users\dykim\Desktop\projects\esp8266\libre_hw_data_nframew\libre_hw_data_nframew\obj\Debug\libre_hw_data_nframew.pdb
+C:\Users\dykim\Source\Repos\hardware_monitor\libre_hw_data_nframew\bin\Debug\libre_hw_data_nframew.exe.config
+C:\Users\dykim\Source\Repos\hardware_monitor\libre_hw_data_nframew\bin\Debug\libre_hw_data_nframew.exe
+C:\Users\dykim\Source\Repos\hardware_monitor\libre_hw_data_nframew\bin\Debug\libre_hw_data_nframew.pdb
+C:\Users\dykim\Source\Repos\hardware_monitor\libre_hw_data_nframew\bin\Debug\System.IO.Ports.dll
+C:\Users\dykim\Source\Repos\hardware_monitor\libre_hw_data_nframew\bin\Debug\HidSharp.dll
+C:\Users\dykim\Source\Repos\hardware_monitor\libre_hw_data_nframew\bin\Debug\LibreHardwareMonitorLib.pdb
+C:\Users\dykim\Source\Repos\hardware_monitor\libre_hw_data_nframew\bin\Debug\LibreHardwareMonitorLib.xml
+C:\Users\dykim\Source\Repos\hardware_monitor\libre_hw_data_nframew\bin\Debug\System.IO.Ports.xml
+C:\Users\dykim\Source\Repos\hardware_monitor\libre_hw_data_nframew\obj\Debug\libre_hw_data_nframew.csproj.AssemblyReference.cache
+C:\Users\dykim\Source\Repos\hardware_monitor\libre_hw_data_nframew\obj\Debug\libre_hw_data_nframew.csproj.CoreCompileInputs.cache
+C:\Users\dykim\Source\Repos\hardware_monitor\libre_hw_data_nframew\obj\Debug\libre_hw.74E2043A.Up2Date
+C:\Users\dykim\Source\Repos\hardware_monitor\libre_hw_data_nframew\obj\Debug\libre_hw_data_nframew.exe
+C:\Users\dykim\Source\Repos\hardware_monitor\libre_hw_data_nframew\obj\Debug\libre_hw_data_nframew.pdb
