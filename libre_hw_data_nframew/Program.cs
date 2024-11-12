@@ -60,7 +60,7 @@ class Program
                         if (sensor.Name == "GPU Core") 
                         {
                             string gpu_core_t = "-";
-                            gpu_core_t = $"{(int)Math.Round(sensor.Value.GetValueOrDefault())} 'C";
+                            //gpu_core_t = $"{(int)Math.Round(sensor.Value.GetValueOrDefault())} 'C";
                             Console.WriteLine($"{sensor.Name} : {gpu_core_t}");  // 콘솔 출력
                             arduinoPort.WriteLine(gpu_core_t);  // Arduino로 전송
                         }
