@@ -34,10 +34,14 @@ class Program
             foreach (var hardware in computer.Hardware)
             {
             hardware.Update();
-            string hardwareName = hardware.Name.Replace("Intel Core ", "").Trim(); // 문자열에서 "Intel Core" 제거
+            string hardwareName = "-";
+            hardwareName = hardware.Name.Replace("Intel Core ", "").Trim(); // 문자열에서 "Intel Core" 제거
             hardwareName = hardwareName.Replace("NVIDIA GeForce ", "").Trim(); // 문자열에서 "NVIDIA Geforce" 제거
             hardwareName = hardwareName.Replace(" SUPER", "s").Trim(); // 문자열에서 " SUPER" "s"로 변경
-                Console.WriteLine(hardwareName); // 콘솔창에 출력
+            hardwareName = hardwareName.Replace(" Intel(R) Iris(R) Xe Graphics", "Iris Xe").Trim(); // 문자열에서 " SUPER" "s"로 변경
+            
+
+            Console.WriteLine(hardwareName); // 콘솔창에 출력
             arduinoPort.WriteLine(hardwareName);// 아두이노 포트로 보내기
 
                 foreach (var sensor in hardware.Sensors)
@@ -48,13 +52,15 @@ class Program
                     //Console.WriteLine($"{sensor.Name} : {sensor.Value.GetValueOrDefault()} 'C");// 모든 데이터 출력 (테스트용)
                     if (sensor.Name == "Core Average") 
                         {
-                            string cpu_core_t = $"{(int)Math.Round(sensor.Value.GetValueOrDefault())} 'C";
+                            string cpu_core_t = "-"; 
+                            cpu_core_t = $"{(int)Math.Round(sensor.Value.GetValueOrDefault())} 'C";
                             Console.WriteLine($"{sensor.Name} : {cpu_core_t}");  // 콘솔 출력
                             arduinoPort.WriteLine(cpu_core_t);  // Arduino로 전송
                         }
                         if (sensor.Name == "GPU Core") 
                         {
-                            string gpu_core_t = $"{(int)Math.Round(sensor.Value.GetValueOrDefault())} 'C";
+                            string gpu_core_t = "-";
+                            gpu_core_t = $"{(int)Math.Round(sensor.Value.GetValueOrDefault())} 'C";
                             Console.WriteLine($"{sensor.Name} : {gpu_core_t}");  // 콘솔 출력
                             arduinoPort.WriteLine(gpu_core_t);  // Arduino로 전송
                         }
@@ -66,14 +72,16 @@ class Program
                    // Console.WriteLine($"{sensor.Name} : {sensor.Value.GetValueOrDefault()} %");// 모든 데이터 출력 (테스트용)
                     if (sensor.Name == "CPU Total")
                         {
-                            string cpu_core_l = $"{(int)Math.Round(sensor.Value.GetValueOrDefault())} %";
+                            string cpu_core_l = "-";
+                            cpu_core_l = $"{(int)Math.Round(sensor.Value.GetValueOrDefault())} %";
                             Console.WriteLine($"{sensor.Name} : {cpu_core_l}");  // 콘솔 출력
                             arduinoPort.WriteLine(cpu_core_l);  // Arduino로 전송
 
                         }
                         if (sensor.Name == "GPU Core")
                         {
-                            string gpu_core_l = $"{(int)Math.Round(sensor.Value.GetValueOrDefault())} %";
+                            string gpu_core_l = "-";
+                            gpu_core_l = $"{(int)Math.Round(sensor.Value.GetValueOrDefault())} %";
                             Console.WriteLine($"{sensor.Name} : {gpu_core_l}");  // 콘솔 출력
                             arduinoPort.WriteLine(gpu_core_l);  // Arduino로 전송
                         }
