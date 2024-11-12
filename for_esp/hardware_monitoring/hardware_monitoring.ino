@@ -32,18 +32,20 @@ void setup()
 
   display.flipScreenVertically();
   display.setTextAlignment(TEXT_ALIGN_LEFT);
+  currentRow = 0;
 }
 
 void loop() 
 {
   if(Serial.available()>0)
   {
-  
-    String receivedData  = Serial.readStringUntil('\n');
+    //이 부분에 코드 시작시 항상 data[0]자리부터 채워지게끔 하기 
+    //setup단계에서 currentRow = 0; 추가?
+    String receivedData  = Serial.readStringUntil('\n'); 
     data[currentRow] = receivedData;
     currentRow++;
-
-    if (currentRow >= numRows) 
+    /*
+    if (currentRow >= numRows) // 학교컴
     {
     // clear the display
     display.clear();
@@ -57,6 +59,27 @@ void loop()
     display.setFont(Arimo_Regular_14);
     display.drawStringf(0, 32, buffer, "CPU: %s | %s",data[3], data[2]);
     display.drawStringf(0, 48, buffer, "GPU: %s | %s",data[5], data[6]);
+ 
+    currentRow = 0;
+    // write the buffer to the display
+    display.display();
+    delay(10);
+    }
+    */
+     if (currentRow >= numRows) // 집컴, data[0]자리에 data[6]이 와있음
+    { // c#코드상에서 정렬하고 데이터 보내도록 하기
+    // clear the display
+    display.clear();
+    display.setFont(Arimo_Regular_16);
+    display.drawString(0, 0, data[1]); //Time
+
+    char buffer[256];
+    display.setFont(Arimo_Regular_10);
+    display.drawStringf(0, 16, buffer, "%s | %s",data[2], data[5]); 
+
+    display.setFont(Arimo_Regular_14);
+    display.drawStringf(0, 32, buffer, "CPU: %s | %s",data[4], data[3]);
+    display.drawStringf(0, 48, buffer, "GPU: %s | %s",data[6], data[0]);
  
     currentRow = 0;
     // write the buffer to the display

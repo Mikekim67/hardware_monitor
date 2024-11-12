@@ -26,7 +26,6 @@ class Program
         computer.Open();
         while (true) // 무한 루프 시작
         {
-            
             DateTime currentTime = DateTime.Now; // 현재 시간 가져오기
             string Time = $"{currentTime.Hour}:{currentTime.Minute}:{currentTime.Second}";
             Console.WriteLine(Time); // 콘솔 출력
@@ -37,6 +36,7 @@ class Program
             hardware.Update();
             string hardwareName = hardware.Name.Replace("Intel Core ", "").Trim(); // 문자열에서 "Intel Core" 제거
             hardwareName = hardwareName.Replace("NVIDIA GeForce ", "").Trim(); // 문자열에서 "NVIDIA Geforce" 제거
+            hardwareName = hardwareName.Replace(" SUPER", "s").Trim();
             Console.WriteLine(hardwareName); // 콘솔창에 출력
             arduinoPort.WriteLine(hardwareName);// 아두이노 포트로 보내기
 

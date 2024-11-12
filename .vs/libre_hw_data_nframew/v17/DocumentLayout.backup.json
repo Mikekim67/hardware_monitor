@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\dykim\\source\\repos\\hardware_monitor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F636E6A-933F-41FF-AA56-B8D18E3DBB86}|libre_hw_data_nframew\\libre_hw_data_nframew.csproj|C:\\Users\\dykim\\source\\repos\\hardware_monitor\\libre_hw_data_nframew\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4F636E6A-933F-41FF-AA56-B8D18E3DBB86}|libre_hw_data_nframew\\libre_hw_data_nframew.csproj|c:\\users\\dykim\\source\\repos\\hardware_monitor\\libre_hw_data_nframew\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F636E6A-933F-41FF-AA56-B8D18E3DBB86}|libre_hw_data_nframew\\libre_hw_data_nframew.csproj|solutionrelative:libre_hw_data_nframew\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,12 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -29,6 +25,18 @@
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
@@ -36,7 +44,7 @@
               "RelativeDocumentMoniker": "libre_hw_data_nframew\\Program.cs",
               "ToolTip": "C:\\Users\\dykim\\source\\repos\\hardware_monitor\\libre_hw_data_nframew\\Program.cs",
               "RelativeToolTip": "libre_hw_data_nframew\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAADwvxsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAADwv1QAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-10T06:03:33.735Z",
               "EditorCaption": ""
