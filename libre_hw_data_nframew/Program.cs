@@ -36,8 +36,8 @@ class Program
             hardware.Update();
             string hardwareName = hardware.Name.Replace("Intel Core ", "").Trim(); // 문자열에서 "Intel Core" 제거
             hardwareName = hardwareName.Replace("NVIDIA GeForce ", "").Trim(); // 문자열에서 "NVIDIA Geforce" 제거
-            hardwareName = hardwareName.Replace(" SUPER", "s").Trim();
-            Console.WriteLine(hardwareName); // 콘솔창에 출력
+            hardwareName = hardwareName.Replace(" SUPER", "s").Trim(); // 문자열에서 " SUPER" "s"로 변경
+                Console.WriteLine(hardwareName); // 콘솔창에 출력
             arduinoPort.WriteLine(hardwareName);// 아두이노 포트로 보내기
 
                 foreach (var sensor in hardware.Sensors)
